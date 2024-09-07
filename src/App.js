@@ -25,7 +25,7 @@ function App() {
     try {
       // Make the API call to fetch weather, air quality, and forecast data
       const weatherResponse = await fetch(
-        `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=5&aqi=yes`
+        `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=5&aqi=yes`
       );
       const data = await weatherResponse.json(); // Parse the response data
 
